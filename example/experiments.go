@@ -19,14 +19,9 @@ func QueryProjectAndResample() {
 	// maximize CPU usage for maximum performance
 	runtime.GOMAXPROCS(runtime.NumCPU())
 
-	/*world := prj.Bounds{prj.Point{-20000000,0}, prj.Point{20000000,20000000}}
-	sizeX := 2000
-	sizeY:= 1000*/
-
 	world := tile.Bounds{tile.Point{-20000000,-20000000}, tile.Point{20000000,20000000}}
 	sizeX := 1000
 	sizeY:= 1000
-
 
 	//get data
 	grid := data.ParseJson("c:\\data\\grib-converted\\2015050600\\gfs.t00z.pgrb2.2p50.f000.2t.json")
