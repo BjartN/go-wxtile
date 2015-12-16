@@ -31,7 +31,7 @@ func QueryProjectAndResample() {
 		return
 	}
 
-	//draw latlon grid
+	//draw lat/lon grid
 	g := tile.ToRegularProjectedGrid(grid)
 	i1 := tile.DrawGrid(&g)
 	tile.SaveImage(i1,"c:\\temp\\lat-lon-grid.png")
